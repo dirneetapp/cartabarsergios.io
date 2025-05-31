@@ -101,6 +101,10 @@ function setupEventListeners() {
     
     // Event listeners para el panel de administración
     adminBtn.addEventListener('click', showLoginModal);
+    document.getElementById('nav-show-admin').addEventListener('click', function(e) {
+        e.preventDefault();
+        showLoginModal();
+    });
     closeAdminBtn.addEventListener('click', toggleAdminPanel);
     
     // Event listener para el selector de sección en el panel de administración
